@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Formation Concepteur-Développeur d'Application, Fondamentaux, language à balises, HTML5, CSS3, Exercices, Travaux pratiques, le cas : Zozor – Carnets de voyage">
+    <meta name="author" content="Achraf Belbachir">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- [if lt IE 9]><script src="http://html5shiv.googlecode.com/trunk/html5.js"></script><! [endif] -->
+
+    <title>JS for Dummies</title>
+
+    <!-- Mobile Specific Meta
+	================================================== -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <!-- Favicon
+	================================================== -->
+    <!-- JSON
+	================================================== -->
+    <!-- Cannonical
+	================================================== -->
+    <!-- <link rel="canonical" href="chemin/nomDuRepertoire/nomDufichier"> -->
+    <!-- Autres Styles CSS
+	================================================== -->
+    <!-- Libs & Frameworks
+	================================================== -->
+    <!-- <link rel="stylesheet" href="chemin/nomDuRepertoire/nomDufichier.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <!-- Fonts
+	================================================== -->
+    <!-- <link rel="stylesheet" href="chemin/nomDuRepertoire/nomDufichier.css"> -->
+    <!-- Hraf
+	================================================== -->
+    <!-- Main CSS -->
+    <!-- Custom CSS -->
+    <!-- Responsive CSS -->
+</head>
+<!--[if IE 6 ]><body class="ie6 old_ie"><![endif]-->
+<!--[if IE 7 ]><body class="ie7 old_ie"><![endif]-->
+<!--[if IE 8 ]><body class="ie8"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
+
+<body>
+    <header>
+        <nav><ul>
+            <!-- <li><a href="#"></a></li> -->
+        </ul></nav>
+        <!-- <h1>Convert currency</h1> -->
+    </header>
+    <!-- END Header -->
+
+    <main>
+        <section>
+        <!-- Warning W3C utilisation la section ne possède pas de balise 'h1', fortement recommandée  -->
+        <!-- La balise 'h1' définie dans 'article', pourrait être déplacée en début de 'section' -->
+            <!-- <h1></h1> -->
+            <h1>Convert currency</h1>
+            <article>
+                <!-- <h2></h2> -->
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-half-desktop is-two-thirds-tablet">
+                            <div class="converter">
+                                <table class="table is-fullwidth">
+                                    <thead></thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="control">
+                                                <input class="input is-normal" type="number" id="fromAmount" name="fromAmount"
+                                                    placeholder="Sasir un montant" min="1">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-primary">
+                                                <select id="fromCurrency" name="fromCurrency">
+                                                    <option value="empty" selected>Sélectionnez une devise</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="control">
+                                                <input class="input is-normal" type="text" id="toAmount" name="toAmount" placeholder="Montant converti"
+                                                    disabled readonly>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-primary">
+                                                <select id="toCurrency" name="toCurrency">
+                                                    <option value="empty" selected>Sélectionnez une devise</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                                <button class="button is-rounded">Effacer le montant</button>
+                                <p id="warning" class="error"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="converter">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="number" id="fromAmount" name="fromAmount" placeholder="Sasir un montant">
+                            </td>
+                            <td>
+                                <select id="fromCurrency" name="fromCurrency">
+                                    <option value="empty" selected>Sélectionnez une devise</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="toAmount" name="toAmount" placeholder="Montant converti" disabled>
+                            </td>
+                            <td>
+                                <select id="toCurrency" name="toCurrency">
+                                    <option value="empty" selected>Sélectionnez une devise</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="number" id="fromAmount" name="fromAmount" placeholder="Sasir un montant">
+                    <select id="fromCurrency" name="fromCurrency">
+                        <option value="empty" selected>Sélectionnez une devise</option>
+                    </select>
+                    <select id="toCurrency" name="toCurrency">
+                        <option value="empty" selected>Sélectionnez une devise</option>
+                    </select>
+                    <input type="text" id="toAmount" name="toAmount" placeholder="Montant converti" disabled>
+                    <p id="warning" class="error"></p>
+                </div> -->
+
+            </article>
+        </section>
+        <!-- END Section -->
+    </main>
+    <!-- END Main -->
+
+    <aside></aside>
+    <!-- END Aside -->
+
+    <footer><h6>Json & Ajax</h6></footer>
+    <!-- END Footer -->
+
+    <!-- JAVASCRIPT
+	================================================== -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="script-stepByStep.js"></script> -->
+    <!-- <script src="currencies.js"></script> -->
+    <script src="convertCurrency.js"></script>
+
+</body>
+
+</html>

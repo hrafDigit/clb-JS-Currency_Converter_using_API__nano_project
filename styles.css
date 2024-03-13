@@ -1,0 +1,121 @@
+/*
+ __                        ___  ____                    __      
+/\ \                     /'___\/\  _`\   __          __/\ \__   
+\ \ \___   _ __    __   /\ \__/\ \ \/\ \/\_\     __ /\_\ \ ,_\  
+ \ \  _ `\/\`'__\/'__`\ \ \ ,__\\ \ \ \ \/\ \  /'_ `\/\ \ \ \/  
+  \ \ \ \ \ \ \//\ \L\.\_\ \ \_/ \ \ \_\ \ \ \/\ \L\ \ \ \ \ \_ 
+   \ \_\ \_\ \_\\ \__/.\_\\ \_\   \ \____/\ \_\ \____ \ \_\ \__\
+    \/_/\/_/\/_/ \/__/\/_/ \/_/    \/___/  \/_/\/___L\ \/_/\/__/
+                                                 /\____/        
+                                                 \_/__/         
+	===================================================================
+	±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+	## CSS ##
+	2024 © Achraf (aka hrafDigit)
+	https://www.achrafely.fr
+	https://codepen.io/hraf
+	https://github.com/hrafdigit
+	made w/ ¶ from Paris, France [with] Grand Jardin Digital [support]
+	https://www.grandjardindigital.fr
+	±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+	================================================================== 
+*/
+
+/*
+!! NOTE about @import !!
+La règle @ @import est utilisée afin d'importer des règles 
+à partir d'autres feuilles de style. Ces règles @ doivent être utilisées AVANT toutes les autres règles, 
+à l'exception de @charset. @import n'est pas une instruction imbriquée et ne peut donc pas être utilisée 
+à l'intérieur de groupe de règles conditionnelles.
+*/
+
+
+
+/* Eléments principaux dans la page */
+body {
+    color: #181818;
+    font-family: 'Arial', sans-serif;
+    /* font-family: 'Trebuchet MS', Arial, sans-serif; */
+    background-color: #f0f0f0;
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: capitalize;
+}
+.converter {
+    margin: 32px auto;
+    padding: 24px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+}
+
+/* Style input fields */
+/* .input {
+    margin-bottom: 10px;
+} */
+
+/* Style select dropdowns */
+.select {
+    margin-bottom: 10px;
+}
+
+/* Style the convert button */
+.button {
+    width: 100%;
+}
+
+/* Style the warning message */
+#warning {
+    color: red;
+    margin-top: 10px;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+main {
+    height: 100vh;
+}
+footer {
+    margin: 0 center;
+    text-align: center;
+}
+
+/* :: Correctifs :: support des anciennes versions d'Internet Explorer */
+/* Active un positionnement 'inline-block' pour les anciennes versions d'IE */
+.old_ie #titre_principal,
+.old_ie #logo,
+.old_ie header h1,
+.old_ie nav,
+.old_ie nav li,
+.old_ie .bouton_rouge,
+.old_ie article,
+.old_ie aside,
+.old_ie #tweet,
+.old_ie #mes_photos,
+.old_ie #mes_amis,
+.old_ie #mes_amis ul {
+    display: inline;
+    zoom: 1;
+}
+
+/* Autres ajustements pour les anciennes versions d'IE */
+.old_ie section h1,
+.ie8 section h1 {
+    font-size: 1.1em;
+}
+
+.old_ie footer div,
+.ie8 footer div {
+    margin-top: 30px;
+    background: url('images/separateur.png') repeat-x top;
+}
